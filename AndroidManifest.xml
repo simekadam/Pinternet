@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.simekadam.pinternet"
+          android:versionCode="5"
+          android:versionName="0.42">
+    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="15"/>
+
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
+
+        <activity android:name=".StartupActivity"
+                  android:label="@string/app_name" android:theme="@style/LightThemeSelector">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".RouteActivity"/>
+        <service android:name=".WidgetCreatorService" android:label="Add to homescreen">
+
+
+        </service>
+        <activity android:label="Route Activity" android:name=".RouteActivity" android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter android:label="@string/action_name">>
+                <action android:name="android.intent.action.SEND"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+                <data android:mimeType="text/plain"></data>
+
+
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/about" android:name=".AboutActivity" android:theme="@style/LightThemeSelector">
+
+        </activity>
+        <activity android:name=".SettingsActivity" android:theme="@style/LightThemeSelector"/>
+    </application>
+
+</manifest>

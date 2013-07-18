@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pinternet</string>
+    <string name="service_action">Adding to your homescreen</string>
+    <string name="action_name">Pin to your homescreen</string>
+    <string name="howtoheading">how to use this app</string>
+    <string name="step1">1</string>
+    <string name="step2">2</string>
+    <string name="step3">3</string>
+    <string name="step1content">While using any of your app which can share some url to other apps click on share button or menu item.</string>
+    <string name="step2content">Select Add to your homescreen item from list of available target applications</string>
+    <string name="step3content">There is no third step, the shortcut icon should be already on your homescreen</string>
+    <string name="myemail">simekadam@gmail.com</string>
+    <string name="about">About</string>
+    <string name="abouttext">$cat about\nThis cool little app has been created by myself.\nReally.\nIf you like it,
+        please rate it on Google Play. If you dislike it do it so as well. Thank you!\nFeature requests, bug reports, or
+        whatever else except any kind of spam send on my email address.\nKeep pinning!\n$⌷
+    </string>
+    <string name="pref_addShortcutIntent">Sharing menu caption</string>
+    <string name="pref_addShortcutIntent_summ">What to display in sharing menu (Since lot of apps sorts this menu alphabeticaly, you can adjust the position, it will be displayed on, with this settings)</string>
+    <string name="preferences_title">Settings</string>
+    <string name="preferences_title_summ">Just settings</string>
+</resources>
